@@ -5,7 +5,9 @@
 }
 
 .container {
+    border: 1px solid #f0f;
     background: #ff0;
+    color: aliceblue;
 }
 
 .text {
