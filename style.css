@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    background: #ff0;
+}
+
+.text {
+    font-size: 24px;
+}
