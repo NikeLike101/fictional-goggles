@@ -47,7 +47,7 @@ var2 = string1
 // console.log(array[0].name[5], array[1].name[1], array[0].name[5] == array[1].name[1]);
 
 let arrayOfStrings = ['hello', 'mello', 'zello']
-console.log(arrayOfStrings[1][2]);
+// console.log(arrayOfStrings[1][2]);
 let arrayOfArrays = [
     
     [['abc', 'rtrd'],['defg'],['ikl']],
@@ -58,8 +58,8 @@ let arrayOfArrays = [
 // console.log(2 == '2');
 // console.log(1 === 3);
 // console.log( 2 !== '2');
-const MEGA_STRING = `hello my name console.log ${prompt("ваш возраст?", 4)} is: ${string1}, age: ${b}, my favourite word is ${arrayOfArrays[0][2][0]}`
-console.log(MEGA_STRING);
+// const MEGA_STRING = `hello my name console.log ${prompt("ваш возраст?", 4)} is: ${string1}, age: ${b}, my favourite word is ${arrayOfArrays[0][2][0]}`
+// console.log(MEGA_STRING);
 
 
 
