@@ -1,4 +1,23 @@
 // 'use strict'
+
+
+const obj2 = {
+        x: 1, 
+
+    func() {
+        this.x++
+        console.log(this.x )
+    }
+}
+
+obj2.func()
+obj2.func()
+obj2.func()
+obj2.func()
+const obj3 = obj2
+obj3.func()
+obj2.func()
+
 console.log('sdasdasd');
 function getName (obj) {
     // window.alert('hello0')
