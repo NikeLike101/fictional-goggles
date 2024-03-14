@@ -42,3 +42,14 @@ body {
     padding: 8px 16px;
     font-size: 8px;
 }
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
