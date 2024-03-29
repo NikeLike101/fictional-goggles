@@ -12,8 +12,8 @@ body {
 
 .container {
     border: 1px solid #f0f;
-    background: #ff0;
-    color: aliceblue;
+    background: #fff;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
 }

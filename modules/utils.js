@@ -15,7 +15,7 @@ export const convertToObjectWithoutName = (object) => {
 }
 const megaArray = [[[[[1]]]]] // [1]
 
-// someArray = [[[...n [1,35,6]]]] // [1,35,6]
+// someArray = [[[...n [1,35,6]]], [[123], [123]], [123]] // [1,35,6]
 
 export const trimArray = (array) => {
     const [,...trimmedArray] = array
