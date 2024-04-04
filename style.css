@@ -53,3 +53,22 @@ body {
 .hide {
     display: none;
 }
+.defaultCircle {
+    
+    border-radius: 50%;
+    background: #ccc;
+    width: 80px;
+    height: 80px;
+    
+}
+
+.red {
+    background: red;
+}
+.orange {
+    background: orange;
+}
+
+.green {
+    background: green;
+}
