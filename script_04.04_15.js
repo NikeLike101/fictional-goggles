@@ -11,7 +11,6 @@ someData
 
 
 
-
 const interval = setInterval(() => {
     if (arr === null) return
     clearInterval(interval)
@@ -67,20 +66,20 @@ xhrPost.onreadystatechange = () => {
 }
 
 xhrPost.onerror = () => {
-    
+
 }
 
 const getGigaData = new Promise((resolve, reject) => {
     setTimeout(() => {
-        if(Math.random() <= 0.1)  reject('polomaysa:(')
-        resolve([1,1,1,1,,11,1,1,1,1,1,1,1,1])
+        if (Math.random() <= 0.1) reject('polomaysa:(')
+        resolve([1, 1, 1, 1, , 11, 1, 1, 1, 1, 1, 1, 1, 1])
     }, 500)
-   
+
 })
 
 
 const doFetch = (promise, setter, valueOnError) => {
-   
+
     const handleSuccess = (response) => {
         setter(response)
     }
@@ -88,10 +87,10 @@ const doFetch = (promise, setter, valueOnError) => {
         setter(valueOnError)
         console.log('wwww', error);
     }
-    promise.then(handleSuccess).catch(handleError) 
+    promise.then(handleSuccess).catch(handleError)
 
     const getData = () => newData
-    return getData 
+    return getData
 }
 
 // doFetch(createPost)
@@ -103,8 +102,8 @@ doFetch(getGigaData, (newValue) => arr = newValue, null)
 
 
 window.addEventListener('click', () => {
-    
-   console.log( arr);
+
+    console.log(arr);
 })
 
 
@@ -141,12 +140,14 @@ form.addEventListener('submit', (e) => {
     console.log(e);
     const formData = new FormData(form)
     formData.append('userId', 3)
-    console.log(formData.get('title'),formData.get('body'), formData.get('userId'), );
+    console.log(formData.get('title'), formData.get('body'), formData.get('userId'),);
     const post = fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
-      
+
         body: formData
     })
 
-    post.then(r => r.json()).then(data => console.log(data))
+    post.then(r =>fetch('https://jsonplaceholder.typicode.com/posts'))
+        .then(r2 =>r2.json())
+        .then(data =>console.log(data))
 })
